@@ -1,0 +1,17 @@
+import pandas as pd
+import numpy as np
+
+# Create a sample DataFrame
+data = {
+    'Name': ['Alice', 'Bob', 'Charlie'],
+    'Age': [24, 27, 22],
+    'Score': [85, 90, 78]
+}
+df = pd.DataFrame(data)
+
+# Perform analysis
+df['Score'] = df['Score'] + 5  # Add 5 to all scores
+mean_age = np.mean(df['Age'])
+
+print("Updated DataFrame:\n", df)
+print("Mean Age:", mean_age)

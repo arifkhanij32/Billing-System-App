@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin: 20px 0;
+        }
+
+        form {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-section {
+            margin-bottom: 20px;
+        }
+
+        .form-section label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-section input, .form-section select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .product-item {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .denominations {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+
+        .actions {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Billing Page</h1>
+    <form method="POST" action="{% url 'billing' %}">
+        {% csrf_token %}
+        
+        <!-- Customer Email Section -->
+        <div class="form-section">
+            <label for="email">Customer Email:</label>
+            <input type="email" id="email" name="customer_email" placeholder="Enter Customer Email" required>
+        </div>
+
+        <!-- Products Section -->
+        <div class="form-section">
+            <label>Bill Section:</label>
+            <div id="products">
+                <div class="product-item">
+                    <input type="text" name="product_id[]" placeholder="Product ID" required>
+                    <input type="number" name="quantity[]" placeholder="Quantity" required>
+                </div>
+            </div>
+            <button type="button" onclick="addProduct()">Add New Product</button>
+        </div>
+
+        <!-- Denominations Section -->
+        <div class="form-section">
+            <label>Denominations:</label>
+            <div class="denominations">
+                <div><label>500</label> <input type="number" name="denomination_500" placeholder="Count"></div>
+                <div><label>50</label> <input type="number" name="denomination_50" placeholder="Count"></div>
+                <div><label>20</label> <input type="number" name="denomination_20" placeholder="Count"></div>
+                <div><label>10</label> <input type="number" name="denomination_10" placeholder="Count"></div>
+                <div><label>5</label> <input type="number" name="denomination_5" placeholder="Count"></div>
+                <div><label>2</label> <input type="number" name="denomination_2" placeholder="Count"></div>
+                <div><label>1</label> <input type="number" name="denomination_1" placeholder="Count"></div>
+            </div>
+        </div>
+
+        <!-- Paid Amount Section -->
+        <div class="form-section">
+            <label for="paid_amount">Cash Paid By Customer:</label>
+            <input type="number" id="paid_amount" name="paid_amount" placeholder="Enter Paid Amount" required>
+        </div>
+
+        <!-- Submit Buttons -->
+        <div class="actions">
+            <button type="button" onclick="window.location.reload()">Cancel</button>
+            <button type="submit">Generate Bill</button>
+        </div>
+    </form>
+
+    <script>
+        // Add New Product Functionality
+        function addProduct() {
+            const productSection = document.getElementById('products');
+            const newProductDiv = document.createElement('div');
+            newProductDiv.classList.add('product-item');
+            newProductDiv.innerHTML = `
+                <input type="text" name="product_id[]" placeholder="Product ID" required>
+                <input type="number" name="quantity[]" placeholder="Quantity" required>
+            `;
+            productSection.appendChild(newProductDiv);
+        }
+    </script>
+</body>
+</html>

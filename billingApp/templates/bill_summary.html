@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Summary</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        .summary-section {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bill Summary</h1>
+
+    <!-- Customer and Purchase Details -->
+    <div class="summary-section">
+        <p><strong>Customer Email:</strong> {{ purchase.customer_email }}</p>
+        <p><strong>Purchase Date:</strong> {{ purchase.purchase_date }}</p>
+    </div>
+
+    <!-- Products Table -->
+    <table>
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Unit Price</th>
+                <th>Quantity</th>
+                <th>Purchase Price</th>
+                <th>Tax Payable</th>
+                <th>Total Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in items %}
+            <tr>
+                <td>{{ item.product.name }}</td>
+                <td>{{ item.product.price }}</td>
+                <td>{{ item.quantity }}</td>
+                <td>{{ item.purchase_price }}</td>
+                <td>{{ item.tax_payable }}</td>
+                <td>{{ item.total_price }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <!-- Total Calculation -->
+    <div class="summary-section">
+        <p><strong>Total Price Without Tax:</strong> {{ purchase.total_price_without_tax }}</p>
+        <p><strong>Total Tax:</strong> {{ purchase.total_tax }}</p>
+        <p><strong>Net Price:</strong> {{ purchase.net_price }}</p>
+        <p><strong>Paid Amount:</strong> {{ purchase.paid_amount }}</p>
+        <p><strong>Balance Due:</strong> {{ purchase.balance_due }}</p>
+    </div>
+
+    <!-- Denominations -->
+    <div class="summary-section">
+        <h3>Balance Denominations</h3>
+        <ul>
+            {% for value, count in balance_denominations.items %}
+                <li>{{ value }}: {{ count }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
