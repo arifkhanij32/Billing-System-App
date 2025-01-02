@@ -13,7 +13,7 @@ This is a simple billing system built with Django and PostgreSQL. The system all
 1. Clone the repository and navigate to the project directory:
    ```bash
    git clone <repository-url>
-   cd BillingSystem
+   cd Billing-System-App
    ```
 
 2. Install dependencies:

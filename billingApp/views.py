@@ -4,11 +4,65 @@ from .models import Product, Purchase, PurchaseItem, Denomination
 from django.conf import settings
 
 
+
 def home(request):
     """
     Renders the home page.
     """
     return render(request, 'home.html')
+
+def product_list(request):
+    products = Product.objects.all()  # Fetch all products from the database
+    return render(request, 'billingApp/product_list.html', {'products': products})
+
+
+def purchase_list(request):
+    """
+    Display a list of all purchases.
+    """
+    purchases = Purchase.objects.all()
+    return render(request, 'billingApp/purchase_list.html', {'purchases': purchases})
+
+def purchase_detail(request, purchase_id):
+    """
+    Display the details of a specific purchase.
+    """
+    purchase = get_object_or_404(Purchase, id=purchase_id)
+    return render(request, 'billingApp/purchase_detail.html', {'purchase': purchase})
+
+def denomination_list(request):
+    """
+    Display the list of all denominations.
+    """
+    denominations = Denomination.objects.all()
+    return render(request, 'billingApp/denomination_list.html', {'denominations': denominations})
+
+def add_denomination(request):
+    """
+    Add a new denomination.
+    """
+    if request.method == 'POST':
+        value = request.POST.get('value')
+        count = request.POST.get('count')
+
+        Denomination.objects.create(value=value, count=count)
+        return redirect('denomination_list')
+
+    return render(request, 'billingApp/denomination_form.html', {'denomination': None})
+
+def update_denomination(request, denomination_id):
+    """
+    Update an existing denomination.
+    """
+    denomination = get_object_or_404(Denomination, id=denomination_id)
+
+    if request.method == 'POST':
+        denomination.value = request.POST.get('value')
+        denomination.count = request.POST.get('count')
+        denomination.save()
+        return redirect('denomination_list')
+
+    return render(request, 'billingApp/denomination_form.html', {'denomination': denomination})
 
  
 def billing_page(request):
@@ -84,7 +138,7 @@ def billing_page(request):
         })
 
     # Render billing page with available products
-    return render(request, 'billing.html', {'products': Product.objects.all()})
+    return render(request, 'billing_page.html', {'products': Product.objects.all()})
 
 
 def calculate_denominations(balance_due):

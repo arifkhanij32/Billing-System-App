@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if denomination %}Update{% else %}Add{% endif %} Denomination</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+
+        form {
+            display: inline-block;
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        label, input {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        button {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>{% if denomination %}Update{% else %}Add{% endif %} Denomination</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <label for="value">Value:</label>
+        <input type="number" name="value" id="value" value="{{ denomination.value|default_if_none:'' }}" required>
+
+        <label for="count">Count:</label>
+        <input type="number" name="count" id="count" value="{{ denomination.count|default_if_none:'' }}" required>
+
+        <button type="submit">Save</button>
+    </form>
+    <div style="margin-top: 20px;">
+        <a href="{% url 'denomination_list' %}">Back to List</a>
+    </div>
+</body>
+</html>

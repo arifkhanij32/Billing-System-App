@@ -58,8 +58,8 @@ ROOT_URLCONF = 'billingSystem.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates'],  # Adjust if needed
-        'APP_DIRS': True,
+        'DIRS': [],  # Add additional template directories if needed
+        'APP_DIRS': True,  # Must be True to load templates from app directories
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
@@ -71,30 +71,36 @@ TEMPLATES = [
     },
 ]
 
+
+
 WSGI_APPLICATION = 'billingSystem.wsgi.application'
 
 
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',  # Use SQLite3 as the database engine
-        'NAME': BASE_DIR / 'db.sqlite3',        # Path to the database file
-    }
-}
-
-
 # DATABASES = {
 #     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'billing_system',
-#         'USER': 'postgres',
-#         'PASSWORD': 'arifkhan',
-#         'HOST': 'localhost',  # Use '127.0.0.1' or the server IP
-#         'PORT': '5432',      # Default PostgreSQL port
+#         'ENGINE': 'django.db.backends.sqlite3',  # Use SQLite3 as the database engine
+#         'NAME': BASE_DIR / 'db.sqlite3',        # Path to the database file
 #     }
 # }
+
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'billing_system',
+        'USER': 'postgres',
+        'PASSWORD': 'postgres',
+        'HOST': 'localhost',  # Use '127.0.0.1' or the server IP
+        'PORT': '5432', 
+        'OPTIONS': {
+            'connect_timeout': 30,  # Increase timeout
+        },
+        # Default PostgreSQL port
+    }
+}
 
 
 # Password validation
