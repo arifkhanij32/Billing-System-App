@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+<body>
+    <h1>Welcome to the Billing System</h1>
+    <ul>
+        <li><a href="{% url 'product_list' %}"><h2>Product List</h2></a></li>
+        <li><a href="{% url 'billing_page' %}"><h2>Billing Page</h2></a></li>
+    </ul>
+</body>
+</html>

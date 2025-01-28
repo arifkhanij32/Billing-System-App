@@ -1,0 +1,960 @@
+[
+    {
+        "label": "django.db.models.deletion",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db.models.deletion",
+        "description": "django.db.models.deletion",
+        "detail": "django.db.models.deletion",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "IntegrityError",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "django.utils.timezone",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.utils.timezone",
+        "description": "django.utils.timezone",
+        "detail": "django.utils.timezone",
+        "documentation": {}
+    },
+    {
+        "label": "now",
+        "importPath": "django.utils.timezone",
+        "description": "django.utils.timezone",
+        "isExtraImport": true,
+        "detail": "django.utils.timezone",
+        "documentation": {}
+    },
+    {
+        "label": "template",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "messages",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "post_migrate",
+        "importPath": "django.db.models.signals",
+        "description": "django.db.models.signals",
+        "isExtraImport": true,
+        "detail": "django.db.models.signals",
+        "documentation": {}
+    },
+    {
+        "label": "uuid",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "uuid",
+        "description": "uuid",
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "get_object_or_404",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "get_object_or_404",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "get_object_or_404",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "get_object_or_404",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "send_mail",
+        "importPath": "django.core.mail",
+        "description": "django.core.mail",
+        "isExtraImport": true,
+        "detail": "django.core.mail",
+        "documentation": {}
+    },
+    {
+        "label": "send_mail",
+        "importPath": "django.core.mail",
+        "description": "django.core.mail",
+        "isExtraImport": true,
+        "detail": "django.core.mail",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "Product",
+        "importPath": "billingapp.models",
+        "description": "billingapp.models",
+        "isExtraImport": true,
+        "detail": "billingapp.models",
+        "documentation": {}
+    },
+    {
+        "label": "Purchase",
+        "importPath": "billingapp.models",
+        "description": "billingapp.models",
+        "isExtraImport": true,
+        "detail": "billingapp.models",
+        "documentation": {}
+    },
+    {
+        "label": "PurchaseItem",
+        "importPath": "billingapp.models",
+        "description": "billingapp.models",
+        "isExtraImport": true,
+        "detail": "billingapp.models",
+        "documentation": {}
+    },
+    {
+        "label": "Denomination",
+        "importPath": "billingapp.models",
+        "description": "billingapp.models",
+        "isExtraImport": true,
+        "detail": "billingapp.models",
+        "documentation": {}
+    },
+    {
+        "label": "Purchase",
+        "importPath": "billingapp.models",
+        "description": "billingapp.models",
+        "isExtraImport": true,
+        "detail": "billingapp.models",
+        "documentation": {}
+    },
+    {
+        "label": "Purchase",
+        "importPath": "billingapp.models",
+        "description": "billingapp.models",
+        "isExtraImport": true,
+        "detail": "billingapp.models",
+        "documentation": {}
+    },
+    {
+        "label": "Count",
+        "importPath": "django.db.models",
+        "description": "django.db.models",
+        "isExtraImport": true,
+        "detail": "django.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "billingapp.migrations.0001_initial",
+        "description": "billingapp.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Denomination',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('value', models.PositiveIntegerField()),",
+        "detail": "billingapp.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "billingapp.migrations.0002_alter_denomination_value",
+        "description": "billingapp.migrations.0002_alter_denomination_value",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('billingapp', '0001_initial'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='denomination',\n            name='value',\n            field=models.DecimalField(decimal_places=2, max_digits=10, unique=True),\n        ),",
+        "detail": "billingapp.migrations.0002_alter_denomination_value",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "billingapp.migrations.0003_alter_purchase_purchase_id",
+        "description": "billingapp.migrations.0003_alter_purchase_purchase_id",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('billingapp', '0002_alter_denomination_value'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='purchase',\n            name='purchase_id',\n            field=models.CharField(blank=True, max_length=3, unique=True),\n        ),",
+        "detail": "billingapp.migrations.0003_alter_purchase_purchase_id",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "billingapp.migrations.0004_alter_purchase_balance_due_alter_purchase_net_price_and_more",
+        "description": "billingapp.migrations.0004_alter_purchase_balance_due_alter_purchase_net_price_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('billingapp', '0003_alter_purchase_purchase_id'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='purchase',\n            name='balance_due',\n            field=models.FloatField(default=0),\n        ),",
+        "detail": "billingapp.migrations.0004_alter_purchase_balance_due_alter_purchase_net_price_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "billingapp.migrations.0005_alter_purchase_purchase_date",
+        "description": "billingapp.migrations.0005_alter_purchase_purchase_date",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('billingapp', '0004_alter_purchase_balance_due_alter_purchase_net_price_and_more'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='purchase',\n            name='purchase_date',\n            field=models.DateTimeField(default=django.utils.timezone.now),\n        ),",
+        "detail": "billingapp.migrations.0005_alter_purchase_purchase_date",
+        "documentation": {}
+    },
+    {
+        "label": "calc_total",
+        "kind": 2,
+        "importPath": "billingapp.templatetags.custom_filters",
+        "description": "billingapp.templatetags.custom_filters",
+        "peekOfCode": "def calc_total(denominations):\n    \"\"\"\n    Calculate the grand total for all denominations.\n    \"\"\"\n    return sum(denomination.total_amount for denomination in denominations)",
+        "detail": "billingapp.templatetags.custom_filters",
+        "documentation": {}
+    },
+    {
+        "label": "register",
+        "kind": 5,
+        "importPath": "billingapp.templatetags.custom_filters",
+        "description": "billingapp.templatetags.custom_filters",
+        "peekOfCode": "register = template.Library()\n@register.filter\ndef calc_total(denominations):\n    \"\"\"\n    Calculate the grand total for all denominations.\n    \"\"\"\n    return sum(denomination.total_amount for denomination in denominations)",
+        "detail": "billingapp.templatetags.custom_filters",
+        "documentation": {}
+    },
+    {
+        "label": "BillingappConfig",
+        "kind": 6,
+        "importPath": "billingapp.apps",
+        "description": "billingapp.apps",
+        "peekOfCode": "class BillingappConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'billingapp'\n    def ready(self):\n        from .models import Denomination\n        from django.db.models.signals import post_migrate\n        # Define the populate_denomination function here\n        def populate_denomination(sender, **kwargs):\n            denominations = [10, 20, 50, 100, 500, 2000]  # Example values\n            for value in denominations:",
+        "detail": "billingapp.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Product",
+        "kind": 6,
+        "importPath": "billingapp.models",
+        "description": "billingapp.models",
+        "peekOfCode": "class Product(models.Model):\n    name = models.CharField(max_length=255)\n    product_id = models.CharField(max_length=50, unique=True)\n    available_stocks = models.PositiveIntegerField()\n    price = models.FloatField()\n    tax_percentage = models.FloatField()\n    def __str__(self):\n        return self.name\n    @property\n    def tax_amount(self):",
+        "detail": "billingapp.models",
+        "documentation": {}
+    },
+    {
+        "label": "Purchase",
+        "kind": 6,
+        "importPath": "billingapp.models",
+        "description": "billingapp.models",
+        "peekOfCode": "class Purchase(models.Model):\n    purchase_id = models.CharField(max_length=8, unique=True, blank=True)\n    customer_email = models.EmailField()\n    purchase_date = models.DateTimeField(default=now)  # Use timezone-aware now\n    total_price_without_tax = models.FloatField(default=0)\n    total_tax = models.FloatField(default=0)\n    net_price = models.FloatField(default=0)\n    paid_amount = models.FloatField(default=0)\n    balance_due = models.FloatField(default=0)\n    def save(self, *args, **kwargs):",
+        "detail": "billingapp.models",
+        "documentation": {}
+    },
+    {
+        "label": "PurchaseItem",
+        "kind": 6,
+        "importPath": "billingapp.models",
+        "description": "billingapp.models",
+        "peekOfCode": "class PurchaseItem(models.Model):\n    purchase = models.ForeignKey(Purchase, related_name=\"items\", on_delete=models.CASCADE)\n    product = models.ForeignKey(Product, on_delete=models.CASCADE)\n    quantity = models.PositiveIntegerField()\n    purchase_price = models.FloatField()\n    tax_payable = models.FloatField()\n    total_price = models.FloatField()\n    def __str__(self):\n        return f\"{self.product.name} x {self.quantity}\"\nclass Denomination(models.Model):",
+        "detail": "billingapp.models",
+        "documentation": {}
+    },
+    {
+        "label": "Denomination",
+        "kind": 6,
+        "importPath": "billingapp.models",
+        "description": "billingapp.models",
+        "peekOfCode": "class Denomination(models.Model):\n    value = models.DecimalField(max_digits=10, decimal_places=2, unique=True)\n    count = models.PositiveIntegerField(default=0)\n    def __str__(self):\n        return f\"{self.value} - {self.count}\"\n    @property\n    def total_amount(self):\n        return self.value * self.count",
+        "detail": "billingapp.models",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "billingapp.urls",
+        "description": "billingapp.urls",
+        "peekOfCode": "urlpatterns = [\n    path('home/', views.home, name='home'),\n    path('products/', views.product_list, name='product_list'),\n    path('products/update/<int:pk>/', views.update_product, name='update_product'),  # Update a product\n    path('products/delete/<int:pk>/', views.delete_product, name='delete_product'),  # Delete a product\n    path('billing/', views.billing_page, name='billing_page'),\n    path('billing/summary/<int:purchase_id>/', views.bill_summary, name='bill_summary'),\n    path('purchases/', views.purchase_list, name='purchase_list'),\n    path('purchase/delete/<int:purchase_id>/', views.delete_purchase, name='delete_purchase'),\n    path('purchases/<int:purchase_id>/', views.purchase_detail, name='purchase_detail'),",
+        "detail": "billingapp.urls",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_denominations",
+        "kind": 2,
+        "importPath": "billingapp.utils",
+        "description": "billingapp.utils",
+        "peekOfCode": "def calculate_denominations(balance_due):\n    \"\"\"\n    Calculates the denominations for a given balance amount.\n    \"\"\"\n    denominations = Denomination.objects.order_by('-value')\n    remaining_balance = balance_due\n    result = {}\n    for denomination in denominations:\n        if remaining_balance <= 0:\n            break",
+        "detail": "billingapp.utils",
+        "documentation": {}
+    },
+    {
+        "label": "home",
+        "kind": 2,
+        "importPath": "billingapp.views",
+        "description": "billingapp.views",
+        "peekOfCode": "def home(request):\n    \"\"\"\n    Renders the home page.\n    \"\"\"\n    return render(request, 'home.html')\ndef product_list(request):\n    if request.method == \"POST\":\n        # Get form data\n        name = request.POST.get(\"name\")\n        product_id = request.POST.get(\"product_id\")",
+        "detail": "billingapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "product_list",
+        "kind": 2,
+        "importPath": "billingapp.views",
+        "description": "billingapp.views",
+        "peekOfCode": "def product_list(request):\n    if request.method == \"POST\":\n        # Get form data\n        name = request.POST.get(\"name\")\n        product_id = request.POST.get(\"product_id\")\n        available_stocks = int(request.POST.get(\"available_stocks\"))\n        price = float(request.POST.get(\"price\"))\n        tax_percentage = float(request.POST.get(\"tax_percentage\"))\n        # Save data to the database\n        Product.objects.create(",
+        "detail": "billingapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "update_product",
+        "kind": 2,
+        "importPath": "billingapp.views",
+        "description": "billingapp.views",
+        "peekOfCode": "def update_product(request, pk):\n    product = get_object_or_404(Product, pk=pk)\n    if request.method == \"POST\":\n        product.name = request.POST.get(\"name\")\n        product.product_id = request.POST.get(\"product_id\")\n        product.available_stocks = int(request.POST.get(\"available_stocks\"))\n        product.price = float(request.POST.get(\"price\"))\n        product.tax_percentage = float(request.POST.get(\"tax_percentage\"))\n        product.save()\n        return redirect(\"product_list\")",
+        "detail": "billingapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "delete_product",
+        "kind": 2,
+        "importPath": "billingapp.views",
+        "description": "billingapp.views",
+        "peekOfCode": "def delete_product(request, pk):\n    product = get_object_or_404(Product, pk=pk)\n    if request.method == \"POST\":\n        product.delete()\n        return redirect(\"product_list\")\n    return render(request, \"delete_product.html\", {\"product\": product})\ndef purchase_list(request):\n    if request.method == \"POST\":\n        if \"add_purchase\" in request.POST:\n            # Add a new purchase",
+        "detail": "billingapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "purchase_list",
+        "kind": 2,
+        "importPath": "billingapp.views",
+        "description": "billingapp.views",
+        "peekOfCode": "def purchase_list(request):\n    if request.method == \"POST\":\n        if \"add_purchase\" in request.POST:\n            # Add a new purchase\n            customer_email = request.POST.get(\"customer_email\")\n            total_price_without_tax = float(request.POST.get(\"total_price_without_tax\"))\n            total_tax = float(request.POST.get(\"total_tax\"))\n            paid_amount = float(request.POST.get(\"paid_amount\"))\n            # Calculate net price and balance due\n            net_price = total_price_without_tax + total_tax",
+        "detail": "billingapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "delete_purchase",
+        "kind": 2,
+        "importPath": "billingapp.views",
+        "description": "billingapp.views",
+        "peekOfCode": "def delete_purchase(request, purchase_id):\n    \"\"\"\n    Delete a specific purchase and its associated items.\n    \"\"\"\n    purchase = get_object_or_404(Purchase, id=purchase_id)\n    purchase.delete()\n    return redirect('purchase_list')\ndef purchase_detail(request, purchase_id):\n    \"\"\"\n    Display the details of a specific purchase and allow adding new items.",
+        "detail": "billingapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "purchase_detail",
+        "kind": 2,
+        "importPath": "billingapp.views",
+        "description": "billingapp.views",
+        "peekOfCode": "def purchase_detail(request, purchase_id):\n    \"\"\"\n    Display the details of a specific purchase and allow adding new items.\n    \"\"\"\n    purchase = get_object_or_404(Purchase, id=purchase_id)\n    if request.method == \"POST\":\n        # Capture form data\n        product_id = request.POST.get(\"product_id\")\n        quantity = int(request.POST.get(\"quantity\"))\n        # Fetch the product",
+        "detail": "billingapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "denomination_list",
+        "kind": 2,
+        "importPath": "billingapp.views",
+        "description": "billingapp.views",
+        "peekOfCode": "def denomination_list(request):\n    \"\"\"\n    Display the list of all denominations.\n    Dynamically shows the denominations added by the user.\n    \"\"\"\n    denominations = Denomination.objects.all()  # Fetch all dynamically added denominations\n    return render(request, 'denomination_list.html', {'denominations': denominations})\ndef add_denomination(request):\n    \"\"\"\n    Add a new denomination dynamically.",
+        "detail": "billingapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "add_denomination",
+        "kind": 2,
+        "importPath": "billingapp.views",
+        "description": "billingapp.views",
+        "peekOfCode": "def add_denomination(request):\n    \"\"\"\n    Add a new denomination dynamically.\n    \"\"\"\n    if request.method == 'POST':\n        value = request.POST.get('value')\n        count = request.POST.get('count')\n        # Only add non-empty values and counts\n        if value and count:\n            try:",
+        "detail": "billingapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "update_denomination",
+        "kind": 2,
+        "importPath": "billingapp.views",
+        "description": "billingapp.views",
+        "peekOfCode": "def update_denomination(request, denomination_id):\n    \"\"\"\n    Update an existing denomination.\n    \"\"\"\n    denomination = get_object_or_404(Denomination, id=denomination_id)\n    if request.method == 'POST':\n        value = request.POST.get('value')\n        count = request.POST.get('count')\n        # Update values only if provided\n        try:",
+        "detail": "billingapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "delete_denomination",
+        "kind": 2,
+        "importPath": "billingapp.views",
+        "description": "billingapp.views",
+        "peekOfCode": "def delete_denomination(request, denomination_id):\n    \"\"\"\n    Deletes a denomination by its ID.\n    \"\"\"\n    denomination = get_object_or_404(Denomination, id=denomination_id)\n    denomination.delete()\n    return redirect('denomination_list')\nfrom django.shortcuts import render, redirect, get_object_or_404\nfrom django.core.mail import send_mail\nfrom django.conf import settings",
+        "detail": "billingapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_denominations",
+        "kind": 2,
+        "importPath": "billingapp.views",
+        "description": "billingapp.views",
+        "peekOfCode": "def calculate_denominations(balance_due):\n    \"\"\"\n    Calculates the denominations for a given balance amount.\n    \"\"\"\n    denominations = Denomination.objects.order_by('-value')\n    remaining_balance = balance_due\n    result = {}\n    for denomination in denominations:\n        if remaining_balance <= 0:\n            break",
+        "detail": "billingapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "billing_page",
+        "kind": 2,
+        "importPath": "billingapp.views",
+        "description": "billingapp.views",
+        "peekOfCode": "def billing_page(request):\n    denominations = Denomination.objects.all()\n    if request.method == 'POST':\n        customer_email = request.POST.get('customer_email')\n        paid_amount = float(request.POST.get('paid_amount', 0))\n        product_ids = request.POST.getlist('product_id[]')\n        quantities = request.POST.getlist('quantity[]')\n        try:\n            # Create Purchase\n            purchase = Purchase.objects.create(",
+        "detail": "billingapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "send_invoice_email",
+        "kind": 2,
+        "importPath": "billingapp.views",
+        "description": "billingapp.views",
+        "peekOfCode": "def send_invoice_email(email, purchase, balance_denominations):\n    \"\"\"\n    Sends an invoice email to the customer.\n    \"\"\"\n    subject = \"Invoice for Your Purchase\"\n    message = f\"\"\"\n    Thank you for your purchase!\n    Purchase ID: {purchase.purchase_id}\n    Total Price Without Tax: {purchase.total_price_without_tax}\n    Total Tax: {purchase.total_tax}",
+        "detail": "billingapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "bill_summary",
+        "kind": 2,
+        "importPath": "billingapp.views",
+        "description": "billingapp.views",
+        "peekOfCode": "def bill_summary(request, purchase_id):\n    \"\"\"\n    Displays the bill summary for a given purchase.\n    \"\"\"\n    # Fetch the purchase object by ID\n    purchase = get_object_or_404(Purchase, id=purchase_id)\n    # Calculate balance denominations\n    balance_denominations = calculate_denominations(purchase.balance_due)\n    # Get purchase items\n    items = PurchaseItem.objects.filter(purchase=purchase)",
+        "detail": "billingapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "billingsystem.asgi",
+        "description": "billingsystem.asgi",
+        "peekOfCode": "application = get_asgi_application()",
+        "detail": "billingsystem.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "billingsystem.settings",
+        "description": "billingsystem.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-zl!33ex%=vmoj1d-g-$r6)&9gns^&15&i6&wo3wmz9^v^t!@wl'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [",
+        "detail": "billingsystem.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "billingsystem.settings",
+        "description": "billingsystem.settings",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-zl!33ex%=vmoj1d-g-$r6)&9gns^&15&i6&wo3wmz9^v^t!@wl'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "detail": "billingsystem.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "billingsystem.settings",
+        "description": "billingsystem.settings",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "detail": "billingsystem.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "billingsystem.settings",
+        "description": "billingsystem.settings",
+        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'billingapp',",
+        "detail": "billingsystem.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "billingsystem.settings",
+        "description": "billingsystem.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'billingapp',\n]\nMIDDLEWARE = [",
+        "detail": "billingsystem.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "billingsystem.settings",
+        "description": "billingsystem.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]\nROOT_URLCONF = 'billingsystem.urls'",
+        "detail": "billingsystem.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "billingsystem.settings",
+        "description": "billingsystem.settings",
+        "peekOfCode": "ROOT_URLCONF = 'billingsystem.urls'\n# settings.py\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],  # Add additional template directories if needed\n        'APP_DIRS': True,  # Must be True to load templates from app directories\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',",
+        "detail": "billingsystem.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "billingsystem.settings",
+        "description": "billingsystem.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],  # Add additional template directories if needed\n        'APP_DIRS': True,  # Must be True to load templates from app directories\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "detail": "billingsystem.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "billingsystem.settings",
+        "description": "billingsystem.settings",
+        "peekOfCode": "WSGI_APPLICATION = 'billingsystem.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.1/ref/settings/#databases\n# DATABASES = {\n#     'default': {\n#         'ENGINE': 'django.db.backends.sqlite3',  # Use SQLite3 as the database engine\n#         'NAME': BASE_DIR / 'db.sqlite3',        # Path to the database file\n#     }\n# }\nDATABASES = {",
+        "detail": "billingsystem.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "billingsystem.settings",
+        "description": "billingsystem.settings",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.postgresql',\n        'NAME': 'billing_system',\n        'USER': 'postgres',\n        'PASSWORD': 'postgres',\n        'HOST': 'localhost',  # Use '127.0.0.1' or the server IP\n        'PORT': '5432', \n        'OPTIONS': {\n            'connect_timeout': 30,  # Increase timeout",
+        "detail": "billingsystem.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "billingsystem.settings",
+        "description": "billingsystem.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    },",
+        "detail": "billingsystem.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_BACKEND",
+        "kind": 5,
+        "importPath": "billingsystem.settings",
+        "description": "billingsystem.settings",
+        "peekOfCode": "EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_PORT = 587\nEMAIL_USE_TLS = True\nEMAIL_HOST_USER = 'arifkhanij32@gmail.com'\nEMAIL_HOST_PASSWORD = 'Aafeefa@2526'\nDEFAULT_FROM_EMAIL = EMAIL_HOST_USER\n# Internationalization\n# https://docs.djangoproject.com/en/5.1/topics/i18n/\nLANGUAGE_CODE = 'en-us'",
+        "detail": "billingsystem.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_HOST",
+        "kind": 5,
+        "importPath": "billingsystem.settings",
+        "description": "billingsystem.settings",
+        "peekOfCode": "EMAIL_HOST = 'smtp.gmail.com'\nEMAIL_PORT = 587\nEMAIL_USE_TLS = True\nEMAIL_HOST_USER = 'arifkhanij32@gmail.com'\nEMAIL_HOST_PASSWORD = 'Aafeefa@2526'\nDEFAULT_FROM_EMAIL = EMAIL_HOST_USER\n# Internationalization\n# https://docs.djangoproject.com/en/5.1/topics/i18n/\nLANGUAGE_CODE = 'en-us'\n# settings.py",
+        "detail": "billingsystem.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_PORT",
+        "kind": 5,
+        "importPath": "billingsystem.settings",
+        "description": "billingsystem.settings",
+        "peekOfCode": "EMAIL_PORT = 587\nEMAIL_USE_TLS = True\nEMAIL_HOST_USER = 'arifkhanij32@gmail.com'\nEMAIL_HOST_PASSWORD = 'Aafeefa@2526'\nDEFAULT_FROM_EMAIL = EMAIL_HOST_USER\n# Internationalization\n# https://docs.djangoproject.com/en/5.1/topics/i18n/\nLANGUAGE_CODE = 'en-us'\n# settings.py\nTIME_ZONE = 'Asia/Kolkata'",
+        "detail": "billingsystem.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_USE_TLS",
+        "kind": 5,
+        "importPath": "billingsystem.settings",
+        "description": "billingsystem.settings",
+        "peekOfCode": "EMAIL_USE_TLS = True\nEMAIL_HOST_USER = 'arifkhanij32@gmail.com'\nEMAIL_HOST_PASSWORD = 'Aafeefa@2526'\nDEFAULT_FROM_EMAIL = EMAIL_HOST_USER\n# Internationalization\n# https://docs.djangoproject.com/en/5.1/topics/i18n/\nLANGUAGE_CODE = 'en-us'\n# settings.py\nTIME_ZONE = 'Asia/Kolkata'\nUSE_I18N = True",
+        "detail": "billingsystem.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_HOST_USER",
+        "kind": 5,
+        "importPath": "billingsystem.settings",
+        "description": "billingsystem.settings",
+        "peekOfCode": "EMAIL_HOST_USER = 'arifkhanij32@gmail.com'\nEMAIL_HOST_PASSWORD = 'Aafeefa@2526'\nDEFAULT_FROM_EMAIL = EMAIL_HOST_USER\n# Internationalization\n# https://docs.djangoproject.com/en/5.1/topics/i18n/\nLANGUAGE_CODE = 'en-us'\n# settings.py\nTIME_ZONE = 'Asia/Kolkata'\nUSE_I18N = True\nUSE_TZ = True",
+        "detail": "billingsystem.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_HOST_PASSWORD",
+        "kind": 5,
+        "importPath": "billingsystem.settings",
+        "description": "billingsystem.settings",
+        "peekOfCode": "EMAIL_HOST_PASSWORD = 'Aafeefa@2526'\nDEFAULT_FROM_EMAIL = EMAIL_HOST_USER\n# Internationalization\n# https://docs.djangoproject.com/en/5.1/topics/i18n/\nLANGUAGE_CODE = 'en-us'\n# settings.py\nTIME_ZONE = 'Asia/Kolkata'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)",
+        "detail": "billingsystem.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_FROM_EMAIL",
+        "kind": 5,
+        "importPath": "billingsystem.settings",
+        "description": "billingsystem.settings",
+        "peekOfCode": "DEFAULT_FROM_EMAIL = EMAIL_HOST_USER\n# Internationalization\n# https://docs.djangoproject.com/en/5.1/topics/i18n/\nLANGUAGE_CODE = 'en-us'\n# settings.py\nTIME_ZONE = 'Asia/Kolkata'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/",
+        "detail": "billingsystem.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "billingsystem.settings",
+        "description": "billingsystem.settings",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\n# settings.py\nTIME_ZONE = 'Asia/Kolkata'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field",
+        "detail": "billingsystem.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "billingsystem.settings",
+        "description": "billingsystem.settings",
+        "peekOfCode": "TIME_ZONE = 'Asia/Kolkata'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "billingsystem.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "billingsystem.settings",
+        "description": "billingsystem.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "billingsystem.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "billingsystem.settings",
+        "description": "billingsystem.settings",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "billingsystem.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "billingsystem.settings",
+        "description": "billingsystem.settings",
+        "peekOfCode": "STATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "billingsystem.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_AUTO_FIELD",
+        "kind": 5,
+        "importPath": "billingsystem.settings",
+        "description": "billingsystem.settings",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "billingsystem.settings",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "billingsystem.urls",
+        "description": "billingsystem.urls",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('billingapp/', include('billingapp.urls')), \n]",
+        "detail": "billingsystem.urls",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "billingsystem.wsgi",
+        "description": "billingsystem.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "billingsystem.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "manage",
+        "description": "manage",
+        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'billingsystem.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
+        "detail": "manage",
+        "documentation": {}
+    }
+]

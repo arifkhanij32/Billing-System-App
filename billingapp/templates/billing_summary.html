@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Summary</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/billing_summary.css' %}">
+</head>
+<body>
+    <h1 style="text-align: center;">Bill Summary</h1>
+
+    {% if purchase %}
+    <!-- Customer and Purchase Details -->
+    <div class="summary-section">
+        <p><strong>Customer Email:</strong> {{ purchase.customer_email }}</p>
+        <p><strong>Purchase Date:</strong> {{ purchase.purchase_date|date:"d M, Y H:i:s" }}</p>
+    </div>
+
+    <!-- Products Table -->
+    <h2>Products Purchased</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Unit Price</th>
+                <th>Quantity</th>
+                <th>Purchase Price</th>
+                <th>Tax Payable</th>
+                <th>Total Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in items %}
+            <tr>
+                <td>{{ item.product.name }}</td>
+                <td>{{ item.product.price }}</td>
+                <td>{{ item.quantity }}</td>
+                <td>{{ item.purchase_price }}</td>
+                <td>{{ item.tax_payable }}</td>
+                <td>{{ item.total_price }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <!-- Total Calculation -->
+    <div class="summary-section">
+        <h2>Total Calculation</h2>
+        <p><strong>Total Price Without Tax:</strong> ₹ {{ purchase.total_price_without_tax }}</p>
+        <p><strong>Total Tax:</strong> ₹ {{ purchase.total_tax }}</p>
+        <p><strong>Net Price:</strong> ₹ {{ purchase.net_price }}</p>
+        <p><strong>Paid Amount:</strong> ₹ {{ purchase.paid_amount }}</p>
+        <p><strong>Balance Due:</strong> ₹ {{ purchase.balance_due }}</p>
+    </div>
+
+    <!-- Denominations -->
+    <div class="summary-section">
+        <h2>Balance Denominations</h2>
+        <ul>
+            {% for value, count in balance_denominations.items %}
+                <li>₹ {{ value }}: {{ count }}</li>
+            {% empty %}
+                <li>No denominations required for balance.</li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% else %}
+    <!-- Error Section -->
+    <h2 style="color: red; text-align: center;">No purchase found!</h2>
+    <p style="text-align: center;">Please ensure the purchase exists and the URL is correct.</p>
+    {% endif %}
+</body>
+</html>

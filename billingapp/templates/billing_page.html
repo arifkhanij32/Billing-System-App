@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing Page</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/billing_page.css' %}">
+</head>
+<body>
+    <h1>Billing Page</h1>
+    <form method="POST" action="{% url 'billing_page' %}">
+
+        <!-- Debugging: Print the generated URL -->
+
+        {% csrf_token %}
+        
+        <!-- Customer Email Section -->
+        <div class="form-section">
+            <label for="email">Customer Email:</label>
+            <input type="email" id="email" name="customer_email" placeholder="Enter Customer Email" required>
+        </div>
+
+        <!-- Products Section -->
+        <div class="form-section">
+            <label>Bill Section:</label>
+            <div id="products">
+                <div class="product-item">
+                    <input type="text" name="product_id[]" placeholder="Product ID" required>
+                    <input type="number" name="quantity[]" placeholder="Quantity" required>
+                </div>
+            </div>
+            <button type="button" onclick="addProduct()">Add New Product</button>
+        </div>
+
+        <!-- Denomination Section -->
+        <h2>Denomination Section</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Denomination Value</th>
+                    <th>Count</th>
+                    <th>Total Amount</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for denomination in denominations %}
+                <tr>
+                    <td>{{ denomination.value }}</td>
+                    <td>
+                        <input type="number" name="denomination_count[]" value="{{ denomination.count }}" min="0" required>
+                        <input type="hidden" name="denomination_id[]" value="{{ denomination.id }}">
+                    </td>
+
+                    <td>{{ denomination.total_amount }}</td>
+                    <td>
+                        <a href="{% url 'update_denomination' denomination.id %}">Update</a>
+                        <a href="{% url 'delete_denomination' denomination.id %}" 
+                           onclick="return confirm('Are you sure you want to delete this denomination?');" 
+                           style="color: red;">Delete</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <!-- Paid Amount Section -->
+        <div class="form-section">
+            <label for="paid_amount">Cash Paid By Customer:</label>
+            <input type="number" id="paid_amount" name="paid_amount" placeholder="Enter Paid Amount" required>
+        </div>
+
+        <!-- Submit Buttons -->
+        <div class="actions">
+            <button type="button" onclick="window.location.reload()">Cancel</button>
+
+            <button type="submit">Generate Bill</button>
+        </div>
+    </form>
+
+    <script>
+        function addProduct() {
+            const products = document.getElementById('products');
+            const newProduct = document.createElement('div');
+            newProduct.className = 'product-item';
+            newProduct.innerHTML = `
+                <input type="text" name="product_id[]" placeholder="Product ID" required>
+                <input type="number" name="quantity[]" placeholder="Quantity" required>
+            `;
+            products.appendChild(newProduct);
+        }
+    </script>
+</body>
+</html>

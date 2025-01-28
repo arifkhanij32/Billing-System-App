@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/product_list.css' %}">
+</head>
+<body>
+    <h1 class="heading">Product List Page</h1>
+    <h2 class="h2">Add Product</h2>
+
+    <div class="form-container">
+        <form method="POST" action="{% url 'product_list' %}">
+            {% csrf_token %}
+            <label for="name">Product Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="product_id">Product ID:</label>
+            <input type="text" id="product_id" name="product_id" required>
+
+            <label for="available_stocks">Available Stocks:</label>
+            <input type="number" id="available_stocks" name="available_stocks" required>
+
+            <label for="price">Price:</label>
+            <input type="number" id="price" name="price" step="0.01" required>
+
+            <label for="tax_percentage">Tax Percentage:</label>
+            <input type="number" id="tax_percentage" name="tax_percentage" step="0.01" required>
+
+            <button type="submit">Add Product</button>
+        </form>
+    </div>
+
+    <ul>
+        <li><a href="{% url 'purchase_list' %}"><h2>Purchase List</h2></a></li>
+    </ul>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Product ID</th>
+                <th>Available Stocks</th>
+                <th>Price</th>
+                <th>Tax Percentage</th>
+                <th>Tax Amount</th>
+                <th>Total Price</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for product in products %}
+            <tr>
+                <td>{{ product.name }}</td>
+                <td>{{ product.product_id }}</td>
+                <td>{{ product.available_stocks }}</td>
+                <td>{{ product.price }}</td>
+                <td>{{ product.tax_percentage }}%</td>
+                <td>{{ product.tax_amount|floatformat:2 }}</td>
+                <td>{{ product.total_price|floatformat:2 }}</td>
+                <td>
+                    <a href="{% url 'update_product' product.id %}">Update</a> |
+                    <a href="{% url 'delete_product' product.id %}" onclick="return confirm('Are you sure you want to delete this product?');">Delete</a> |
+                    
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

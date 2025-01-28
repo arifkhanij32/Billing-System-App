@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if denomination %}Update Denomination{% else %}Add Denomination{% endif %}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/denomination_form.css' %}">
+</head>
+<body>
+    <div class="form-container">
+        <h1>{% if denomination %}Update Denomination{% else %}Add Denomination{% endif %}</h1>
+
+        {% if error_message %}
+        <div class="error">{{ error_message }}</div>
+        {% endif %}
+
+        <form method="POST">
+            {% csrf_token %}
+            <label for="value">Denomination Value:</label>
+            <input type="number" step="0.01" id="value" name="value" value="{{ denomination.value|default:'' }}" required>
+
+            <label for="count">Count:</label>
+            <input type="number" id="count" name="count" value="{{ denomination.count|default:'' }}" required>
+
+            <button type="submit">{% if denomination %}Update{% else %}Add{% endif %} Denomination</button>
+            <a href="{% url 'billing_page' %}" class="cancel-button">Cancel</a>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+name,product_id,available_stocks,price,tax_percentage
+Laptop,PROD001,25,750.00,18.00
+Smartphone,PROD002,40,500.00,12.00
+Tablet,PROD003,30,400.00,5.00
+Smart Watch,PROD004,15,150.00,10.00
+Wireless Earbuds,PROD005,50,50.00,5.00
+Monitor,PROD006,20,200.00,18.00
+Keyboard,PROD007,35,25.00,5.00
+Mouse,PROD008,40,15.00,5.00
+External Hard Drive,PROD009,10,100.00,12.00
+Printer,PROD010,8,250.00,18.00
+Webcam,PROD011,20,60.00,5.00
+Speaker,PROD012,25,80.00,10.00
+Power Bank,PROD013,50,30.00,5.00
+Router,PROD014,20,120.00,18.00
+Headphones,PROD015,30,90.00,10.00

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Product</title>
+    <!-- Link to the CSS file -->
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/update_product.css' %}">
+</head>
+<body>
+    <h1>Update Product</h1>
+
+    <form method="POST" action="">
+        {% csrf_token %}
+        <label for="name">Product Name:</label>
+        <input type="text" id="name" name="name" value="{{ product.name }}" required>
+
+        <label for="product_id">Product ID:</label>
+        <input type="text" id="product_id" name="product_id" value="{{ product.product_id }}" required>
+
+        <label for="available_stocks">Available Stocks:</label>
+        <input type="number" id="available_stocks" name="available_stocks" value="{{ product.available_stocks }}" required>
+
+        <label for="price">Price:</label>
+        <input type="number" id="price" name="price" step="0.01" value="{{ product.price }}" required>
+
+        <label for="tax_percentage">Tax Percentage:</label>
+        <input type="number" id="tax_percentage" name="tax_percentage" step="0.01" value="{{ product.tax_percentage }}" required>
+
+        <button type="submit">Update Product</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase Details</title>
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'css/purchase_detail.css' %}">
+
+</head>
+<body>
+    <h1 class="heading">Purchase Details</h1>
+    <p><strong>Purchase ID:</strong> {{ purchase.purchase_id }}</p>
+    <p><strong>Customer Email:</strong> {{ purchase.customer_email }}</p>
+    <p><strong>Purchase Date:</strong> {{ purchase.purchase_date }}</p>
+    <p><strong>Total Price Without Tax:</strong> {{ purchase.total_price_without_tax }}</p>
+    <p><strong>Total Tax:</strong> {{ purchase.total_tax }}</p>
+    <p><strong>Net Price:</strong> {{ purchase.net_price }}</p>
+    <p><strong>Paid Amount:</strong> {{ purchase.paid_amount }}</p>
+    <p><strong>Balance Due:</strong> {{ purchase.balance_due }}</p>
+    
+    <!-- Add Item Form
+    <h2>Add Item</h2>
+    <form method="POST">
+        {% csrf_token %}
+        <select name="product_id" required>
+            <option value="" disabled selected>Select Product</option>
+            {% for product in products %}
+            <option value="{{ product.id }}">{{ product.name }}</option>
+            {% endfor %}
+        </select>
+        <input type="number" name="quantity" placeholder="Quantity" required>
+        <button type="submit">Add Item</button>
+    </form> -->
+    
+    <!-- Items Table -->
+    <h2>Items</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Quantity</th>
+                <th>Purchase Price</th>
+                <th>Tax Payable</th>
+                <th>Total Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in purchase.items.all %}
+            <tr>
+                <td>{{ item.product.name }}</td>
+                <td>{{ item.quantity }}</td>
+                <td>{{ item.purchase_price }}</td>
+                <td>{{ item.tax_payable }}</td>
+                <td>{{ item.total_price }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <a href="{% url 'purchase_list' %}">Back to List</a>
+    <ul>
+        <li><a href="{% url 'billing_page' %}"><h2>Billing Page</h2></a></li>
+    </ul>
+</body>
+</html>

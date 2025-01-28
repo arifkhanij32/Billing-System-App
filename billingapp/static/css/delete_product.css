@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 20px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #d9534f; /* Red color for warning */
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #d9534f; /* Red for delete action */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #c9302c; /* Darker red on hover */
+}
+
+form a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #5bc0de; /* Blue for cancel */
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+form a:hover {
+    background-color: #31b0d5; /* Darker blue on hover */
+}
